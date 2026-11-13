@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dashboard</title>
+    <link rel="icon" type="image/png" href="assets/images/favicon.png">
     <link rel="stylesheet" href="assets/style.css">
 </head>
 <body>
@@ -15,8 +16,8 @@
             </ul>
         </nav>
 </header>
-
-<class="container">
+<form method="post" action="dashboard.php">
+<div class="container">
     <div class="form">
 
 
@@ -26,8 +27,8 @@
         </div>
 
         <div class="q1">    
-            <label for="question1">What Happened?</label>
-            <input type="text" id="question1" name="question1" placeholder="Describe the trigger or situation that occurred.">
+            <label for="situation">What Happened?</label>
+            <textarea id="situation" name="situation" placeholder="Describe the situation that triggered your thoughts..."></textarea>
         </div>
 
         <div class="q2">
@@ -46,18 +47,18 @@
         </div>
 
          <div class="q3">    
-            <label for="question3">What went through your mind?</label>
-            <input type="text" id="question3" name="question3" placeholder="Describe your response to the situation.">
+            <label for="thought">What went through your mind?</label>
+            <textarea id="thought" name="thought" placeholder="Describe your response to the situation..."></textarea>
         </div>
 
         <div class="q4">    
-            <label for="question4">What facts do you have that support the unhelpful thought?</label>
-            <input type="text" id="question4" name="question4" placeholder="Describe the evidence for your unhelpful thought.">
+            <label for="facts_for">What facts do you have that support the unhelpful thought?</label>
+            <textarea id="facts_for" name="facts_for" placeholder="Describe the evidence for your unhelpful thought..."></textarea>
         </div>
 
         <div class="q5">    
-            <label for="question5">What facts do you have that contradict the unhelpful thought?</label>
-            <input type="text" id="question5" name="question5" placeholder="Describe the evidence against your unhelpful thought.">
+            <label for="facts_against">What facts do you have that contradict the unhelpful thought?</label>
+            <textarea id="facts_against" name="facts_against" placeholder="Describe the evidence against your unhelpful thought..."></textarea>
         </div>
 
         <div class="form-comment">
@@ -65,8 +66,8 @@
         </div>
 
         <div class="q6">    
-            <label for="question6">What is a more balanced thought?</label>
-            <input type="text" id="question6" name="question6" placeholder="Describe a more balanced perspective.">
+            <label for="bigger_picture">What is a more balanced thought?</label>
+            <textarea id="bigger_picture" name="bigger_picture" placeholder="Describe a more balanced perspective..."></textarea>
         </div>
 
         <div class="q7">    
@@ -82,15 +83,19 @@
                 <li>Good</li>
                 <li>Great</li>
             </ul>
+        </div>
 
             <div class="q8">    
-                <label for="question8">What is your plan to move forward?</label>
-                <input type="text" id="question8" name="question8" placeholder="Describe your next steps.">
+                <label for="alternative_action">What is your plan to move forward?</label>
+                <textarea id="alternative_action" name="alternative_action" placeholder="Describe your next steps..."></textarea>
             </div>
 
-        <a href="new_entry.php" class="btn">Add New Entry</a>
-        <a href="view_entries.php" class="btn">Continue ></a>
+        <button type="submit" name="action" value="draft" class="btn">Add New Entry</button>
+        <button type="submit" name="action" value="continue" class="btn">Continue ></button>
+        
     </div>
-   <script src="assets/script.js"> defer</script> 
+</form>
+
+   <script src="assets/script.js"> defer></script> 
 </body>
 </html>

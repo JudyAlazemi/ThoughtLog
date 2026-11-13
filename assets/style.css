@@ -1,12 +1,25 @@
-:root {
-    Background-color: #f2EFE5;
-    font-family: 'Inclusive Sans', sans-serif;
+@font-face {
+    font-family: 'Inclusive Sans';
+    src: url('fonts/InclusiveSans-Regular.ttf');
+    font-weight: 400;
+}
+
+
+@font-face {
+    font-family: 'Inclusive Sans';
+    src: url('fonts/InclusiveSans-SemiBold.ttf');
+    font-weight: 700;
+}
+
+body {
+   font-family: 'Inclusive Sans', sans-serif;
+   background-color: #f2efe5;
 }
 
 .navbar {
     list-style-type: none;
     display: flex;
-    align-items: flex-start;
+    align-items: center;
     justify-content: space-between;
     margin: 0;
     padding: 1rem 2rem;
@@ -18,5 +31,4 @@
 
 #menu {
     height: 50px;
-    float: right;
 }
