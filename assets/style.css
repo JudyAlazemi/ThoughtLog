@@ -1,0 +1,22 @@
+:root {
+    Background-color: #f2EFE5;
+    font-family: 'Inclusive Sans', sans-serif;
+}
+
+.navbar {
+    list-style-type: none;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    margin: 0;
+    padding: 1rem 2rem;
+}
+
+#logo {
+    height: 50px;
+}
+
+#menu {
+    height: 50px;
+    float: right;
+}
