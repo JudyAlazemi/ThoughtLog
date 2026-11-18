@@ -32,3 +32,105 @@ body {
 #menu {
     height: 50px;
 }
+
+.form {
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 1rem;
+}
+
+.form-body {
+    text-align: center;
+}
+
+.question {
+    margin-bottom: 1.5rem;
+    margin: 1.5rem;
+}
+
+label {
+    display: block;
+    font-size: 0.9rem;
+    margin-bottom: 0.4rem;
+}
+
+textarea {
+    width: 100%;
+    height: 80px;
+    box-sizing: border-box;
+    padding: 0.5rem;
+    border: 1px solid #8fb4d9;
+    border-radius: 4px;
+    font-family: inherit;
+    margin-bottom: 1rem;
+}
+
+textarea::placeholder {
+    color: #6c9bd1;
+    font-size: 0.75rem;
+}
+
+input[type="range"] {
+    width: 100%;
+    -webkit-appearance: none;
+    appearance: none;
+    height: 8px;
+    border-radius: 4px;
+    background: linear-gradient(to right, #eaa3a3, #c4a8e0, #8fc0d8, #9fb86a, #eec87a);
+}
+
+input[type="range"]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    width: 22px;
+    height: 22px;
+    border-radius: 50%;
+    background: white;
+    border: 2px solid black;
+}
+
+input[type="range"]::-moz-range-thumb {
+    width: 22px;
+    height: 22px;
+    border-radius: 50%;
+    background: white;
+    border: 2px solid black;
+}
+
+.mood_labels {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    padding: 0;
+    margin: 0.3rem 0 0;
+    font-size: 0.7rem;
+}
+
+.q2, .q7 {
+    text-align: center;
+}
+
+.form-comment {
+    text-align: center;
+    color: #6c9bd1;
+}
+
+.btn {
+    padding: 0.6rem 2rem;
+    border-radius: 999px;
+    border: 2px solid #6b57d0;
+    background: #6b57d0;
+    color: white;
+    font-family: inherit;
+    cursor: pointer;
+}
+
+.btn[value="draft"] {
+    background: transparent;
+    color: #6b57d0;
+}
+
+.buttons {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
