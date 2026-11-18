@@ -45,7 +45,6 @@ body {
 
 .question {
     margin-bottom: 1.5rem;
-    margin: 1.5rem;
 }
 
 label {
@@ -106,9 +105,18 @@ input[type="range"]::-moz-range-thumb {
 }
 
 .q2, .q7 {
-    text-align: center;
+    text-align: left;
 }
 
+.q2 h2, .q7 h2 {
+    font-size: 1.5rem;
+    margin: 0.3rem 0;
+}
+
+.q2 p, .q7 p {
+    font-size: 0.75rem;
+    margin: 0 0 1rem;
+}
 .form-comment {
     text-align: center;
     color: #6c9bd1;
